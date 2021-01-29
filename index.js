@@ -165,7 +165,6 @@ function CuboidMaker(props){
   this.height = props.height;
 }
 
-
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
@@ -220,6 +219,12 @@ class CuboidMakerTwo{
     return 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
   }
 }
+
+const cuboidTwo = new CuboidMakerTwo({
+  length: 4,
+  width: 5,
+  height: 5
+});
 
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
